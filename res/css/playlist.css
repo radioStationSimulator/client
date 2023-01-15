@@ -1,0 +1,38 @@
+.playlist {
+    grid-area: main-grid_content_view;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 5rem auto 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "playlist-music_header player-pane_header player-queue_header" "player-songs_availible player-time_left player-queue" "player-songs_availible player-currently_playing-marquee player-queue";
+}
+
+.playlist-music_header {
+    grid-area: playlist-music_header;
+}
+
+.player-songs_availible {
+    grid-area: player-songs_availible;
+}
+
+.player-currently_playing-marquee {
+    grid-area: player-currently_playing-marquee;
+}
+
+.player-time_left {
+    grid-area: player-time_left;
+    aspect-ratio: 1/1;
+}
+
+.player-pane_header {
+    grid-area: player-pane_header;
+}
+
+.player-queue {
+    grid-area: player-queue;
+}
+
+.player-queue_header {
+    grid-area: player-queue_header;
+}
