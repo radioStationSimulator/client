@@ -2,7 +2,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 10rem;
+    grid-template-rows: auto 11rem;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "main-grid_content_view main-grid_content_view main-grid_content_view main-grid_content_view" "main-grid_left main-grid_middle main-grid_right main-grid_info";
