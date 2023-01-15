@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./res/fontawesome/css/all.css">
     <link rel="stylesheet" href="./res/css/info_view.css">
     <link rel="stylesheet" href="./res/css/mixer.css">
-    <link rel="stylesheet" href="./res/css/playlist.css">
+    <link rel="stylesheet" href="./res/css/player.css">
 </head>
 
 <body>
@@ -29,14 +29,15 @@
             </div>
             <div class="slider-grid_buttons"></div>
         </div>
-        <div class="playlist">
-            <div class="playlist-music_header"></div>
-            <div class="player-songs_availible"></div>
+        <div class="player">
+            <div class="player-music_header"></div>
+            <div class="player-songs_availible" id="player-songs_availible">
+            </div>
+            <div class="player-pane_header"></div>
             <div class="player-currently_playing-marquee"></div>
             <div class="player-time_left"></div>
-            <div class="player-pane_header"></div>
-            <div class="player-queue"></div>
             <div class="player-queue_header"></div>
+            <div class="player-queue"></div>
         </div>
         <div class="main-grid_right"></div>
         <div class="main-grid_info">
@@ -47,6 +48,7 @@
     </div>
     <script src="./res/js/jquery/jquery-3.6.1.min.js"></script>
     <script src="./res/js/clock.js"></script>
+    <script src="./res/js/getMusic.js"></script>
 </body>
 
 </html>
