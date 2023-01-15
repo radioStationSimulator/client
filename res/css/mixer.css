@@ -39,4 +39,51 @@
 
 .slider-grid_buttons {
     grid-area: slider-grid_buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "button-top_left button_top_right"
+      "button_middle-left button_middle-right"
+      "button_bottom-left button_bottom-right";
 }
+
+.slider-grid_buttons>* {
+    display: grid;
+    place-items: center;
+    padding: 0.5rem;
+    margin: auto;
+    background-color: var(--background2-color);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--background2-color);
+    font-size: 1.5rem;
+}
+
+.button-top_left { 
+    grid-area: button-top_left; 
+}
+  
+.button_top_right { 
+    grid-area: button_top_right; 
+}
+  
+.button_middle-left { 
+    grid-area: button_middle-left; 
+}
+  
+.button_middle-right { 
+    grid-area: button_middle-right; 
+}
+  
+.button_bottom-left { 
+    grid-area: button_bottom-left; 
+}
+  
+.button_bottom-right { 
+    grid-area: button_bottom-right; 
+}
+  
