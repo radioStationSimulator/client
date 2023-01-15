@@ -8,6 +8,10 @@
     grid-template-areas: "main-grid_content_view main-grid_content_view main-grid_content_view main-grid_content_view" "main-grid_left main-grid_middle main-grid_right main-grid_info";
 }
 
+.main-grid>* {
+    outline: 1px solid #00000088;
+}
+
 .main-grid_content_view {
     grid-area: main-grid_content_view;
 }
