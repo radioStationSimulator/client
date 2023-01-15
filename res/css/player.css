@@ -1,0 +1,106 @@
+.player {
+    grid-area: main-grid_content_view;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 5rem auto 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "player-music_header player-pane_header player-queue_header" "player-songs_availible player-time_left player-queue" "player-songs_availible player-currently_playing-marquee player-queue";
+}
+
+.player>* {
+    outline: 1px solid #00000088;
+}
+
+.player-music_header {
+    grid-area: player-music_header;
+}
+
+.player-currently_playing-marquee {
+    grid-area: player-currently_playing-marquee;
+}
+
+.player-time_left {
+    grid-area: player-time_left;
+    aspect-ratio: 1/1;
+}
+
+.player-pane_header {
+    grid-area: player-pane_header;
+}
+
+.player-queue {
+    grid-area: player-queue;
+}
+
+.player-queue_header {
+    grid-area: player-queue_header;
+}
+
+
+/* Song list */
+
+.player-songs_availible {
+    grid-area: player-songs_availible;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.player-song_pane {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background-color: var(--background2-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "player-song_pane-title player-song_actions" "player-song_pane-artist player-song_actions";
+}
+
+.player-song_pane-title {
+    grid-area: player-song_pane-title;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.player-song_pane-artist {
+    grid-area: player-song_pane-artist;
+    font-size: 1rem;
+}
+
+.active_playing {
+    background-color: var(--accent-color);
+}
+
+.player-song_actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "player-song_action-play player-song_action-add_to_queue player-song_action-add_at_first";
+    grid-area: player-song_actions;
+}
+
+.player-song_actions * {
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.player-song_action-play {
+    grid-area: player-song_action-play;
+}
+
+.player-song_action-add_to_queue {
+    grid-area: player-song_action-add_to_queue;
+}
+
+.player-song_action-add_at_first {
+    grid-area: player-song_action-add_at_first;
+}
