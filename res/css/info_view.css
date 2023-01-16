@@ -1,10 +1,10 @@
 .main-grid_info {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "info-grid_time" "info-grid_time-left" "info-grid_people";
+    grid-template-areas: "info-grid_time" "info-grid_people";
 }
 
 .main-grid_info>* {
@@ -21,10 +21,6 @@
 
 .info-grid_time {
     grid-area: info-grid_time;
-}
-
-.info-grid_time-left {
-    grid-area: info-grid_time-left;
 }
 
 .info-grid_people {
