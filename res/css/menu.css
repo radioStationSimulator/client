@@ -1,0 +1,77 @@
+.menu {  
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . . . . menu_tut"
+      ". . . . . ."
+      ". . menu_start menu_start . ."
+      ". . menu_shop menu_shop . ."
+      ". . . . . ."
+      ". . . . . ."; 
+      height: 100%;
+  }
+  
+.menu_start { 
+    grid-area: menu_start; 
+    display: grid;
+    place-items: center;
+    /* padding: 10%; */
+    margin: auto;
+    background-color: var(--background2-color);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--background2-color);
+    font-size: 3rem;
+    height: 75%;
+    width: 75%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition:0.2s;
+}
+  
+.menu_shop { 
+    grid-area: menu_shop; 
+    display: grid;
+    place-items: center;
+    /* padding: 10%; */
+    margin: auto;
+    background-color: var(--background2-color);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--background2-color);
+    font-size: 3rem;
+    height: 75%;
+    width: 75%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition:0.2s;
+}
+
+.menu_tut { 
+    grid-area: menu_tut; 
+    display: grid;
+    place-items: center;
+    /* padding: 10%; */
+    margin: auto;
+    background-color: var(--background2-color);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--background2-color);
+    font-size: 3rem;
+    height: 75%;
+    width: 75%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition:0.2s;
+}
+
+.menu_shop:hover, .menu_start:hover, .menu_tut:hover {
+    transform: scale(1.1);
+    color: var(--accent-color);
+}

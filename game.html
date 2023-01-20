@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadioStationSim</title>
+    <link rel="stylesheet" href="./res/css/fonts.css">
+    <link rel="stylesheet" href="./res/css/main.css">
+    <link rel="stylesheet" href="./res/css/grid.css">
+    <link rel="stylesheet" href="./res/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./res/css/info_view.css">
+    <link rel="stylesheet" href="./res/css/mixer.css">
+</head>
+
+<body>
+    <div class="main-grid">
+        <div class="main-grid_content_view"></div>
+        <div class="mixer">
+            <div class="slider-grid_slider">
+                <div class="slider_slider-left">
+                    <input type="range" min="0" max="100" value="50" class="slider" id="slider-left" orient="vertical">
+                </div>
+                <div class="slider_slider-right">
+                    <input type="range" min="0" max="100" value="50" class="slider" id="slider-right" orient="vertical">
+                </div>
+            </div>
+            <div class="slider-grid_buttons">
+                <div class="button-top_left">test</div>
+                <div class="button_top_right">test</div>
+                <div class="button_middle-left">test</div>
+                <div class="button_middle-right">test</div>
+                <div class="button_bottom-left">test</div>
+                <div class="button_bottom-right">test</div>
+            </div>
+        </div>
+        <div class="main-grid_middle"></div>
+        <div class="main-grid_right"></div>
+        <div class="main-grid_info">
+            <div class="info-grid_time" id="info-grid_time"></div>
+            <div class="info-grid_people"><i class="fa-regular fa-user"></i>&nbsp;234</div>
+        </div>
+    </div>
+    <script src="./res/js/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./res/js/clock.js"></script>
+    <script src="./res/js/slider.js"></script>
+</body>
+
+</html>
